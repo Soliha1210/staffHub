@@ -1,0 +1,76 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Ali",
+            "surname": "Karimov",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Male",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Dilnoza",
+            "surname": "Rasulova",
+            "birthdate": "1992-08-10",
+            "passport": "AB7654321",
+            "gender": "Female",
+            "active": false
+        },
+        {
+            "id": 3,
+            "name": "Ali",
+            "surname": "Karimov",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Male",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Dilnoza",
+            "surname": "Rasulova",
+            "birthdate": "1992-08-10",
+            "passport": "AB7654321",
+            "gender": "Female",
+            "active": false
+        },
+        {
+            "id": 5,
+            "name": "Ali",
+            "surname": "Karimov",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Male",
+            "active": true
+        },
+        {
+            "id": 6,
+            "name": "Ali",
+            "surname": "Karimov",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Male",
+            "active": true
+        },
+        {
+            "id": 7,
+            "name": "Vali",
+            "surname": "Karimov",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Male",
+            "active": true
+        },
+        {
+            "id": 8,
+            "name": "Mali",
+            "surname": "Karimova",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Female",
+            "active": true
+        }
+    ]
+}
