@@ -7,7 +7,10 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Male",
-            "active": true
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+            "position":"Backend developer",
+            "description": "Ali Karimov has been working in the company for 5 years as a backend developer with strong experience in databases. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!" 
         },
         {
             "id": 2,
@@ -16,7 +19,10 @@
             "birthdate": "1992-08-10",
             "passport": "AB7654321",
             "gender": "Female",
-            "active": false
+            "active": false,
+            "photo": "https://randomuser.me/api/portraits/women/45.jpg",
+            "position":"Hr",
+            "description": "Dilnoza Rasulova works in the HR department as a senior specialist in employee relations and recruitment. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         },
         {
             "id": 3,
@@ -25,7 +31,10 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Male",
-            "active": true
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/men/28.jpg",
+            "position":"IT specialist",
+            "description": "Young IT specialist, mainly focused on working with databases and server-side technologies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         },
         {
             "id": 4,
@@ -34,7 +43,10 @@
             "birthdate": "1992-08-10",
             "passport": "AB7654321",
             "gender": "Female",
-            "active": false
+            "active": false,
+            "photo": "https://randomuser.me/api/portraits/women/68.jpg",
+            "position":"Marketer",
+            "description": "Marketing expert responsible for advertising campaigns and public relations projects.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         },
         {
             "id": 5,
@@ -43,7 +55,10 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Male",
-            "active": true
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/men/12.jpg",
+            "position":"Frontend developer",
+            "description": "Frontend developer with strong knowledge of Vue.js and React, focused on user experience.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         },
         {
             "id": 6,
@@ -52,8 +67,11 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Male",
-            "active": true
-        },
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/men/91.jpg",
+            "position":"IT specialist",
+            "description": "IT security specialist responsible for monitoring and maintaining network safety.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
+            },
         {
             "id": 7,
             "name": "Vali",
@@ -61,7 +79,10 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Male",
-            "active": true
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/men/77.jpg",
+            "position":"Project manager",
+            "description": "Project manager experienced in Agile and Scrum methodologies, ensuring timely delivery of projects.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         },
         {
             "id": 8,
@@ -70,7 +91,34 @@
             "birthdate": "1995-03-21",
             "passport": "AA1234567",
             "gender": "Female",
-            "active": true
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/women/12.jpg",
+            "position":"UI/UX designer",
+            "description": "UI/UX designer with experience in mobile app design and user interface improvements.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
+            },
+        {
+            "id": 9,
+            "name": "Mali",
+            "surname": "Karimova",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Female",
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/women/37.jpg",
+            "position":"Sales manager",
+            "description": "Sales manager responsible for client relations, contracts, and revenue growth.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
+            },
+        {
+            "id": 10,
+            "name": "Leyla",
+            "surname": "Karimova",
+            "birthdate": "1995-03-21",
+            "passport": "AA1234567",
+            "gender": "Female",
+            "active": true,
+            "photo": "https://randomuser.me/api/portraits/women/83.jpg",
+            "position":"Manager",
+            "description": "Accountant managing financial reports, tax declarations, and budget planning.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         }
     ]
 }
