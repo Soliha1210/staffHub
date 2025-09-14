@@ -120,5 +120,107 @@
             "position":"Manager",
             "description": "Accountant managing financial reports, tax declarations, and budget planning.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque suscipit mollitia exercitationem ab eum repellendus? Fugit, unde quisquam laudantium praesentium exercitationem tempore error tenetur, maxime rerum asperiores nobis! Quasi!"
         }
+    ],
+    "documents": [
+        {
+            "id": 1,
+            "type": "invoice",
+            "number": "INV-2025-001",
+            "date": "2025-09-10",
+            "description": "Asosiy xizmatlar uchun hisob-faktura",
+            "invoiceType": "standard",
+            "attorneyFullName": null,
+            "employeeId": 1
+        },
+        {
+            "id": 2,
+            "type": "invoice",
+            "number": "INV-2025-002",
+            "date": "2025-09-11",
+            "description": "Qo‘shimcha xizmatlar uchun hisob-faktura",
+            "invoiceType": "additional",
+            "attorneyFullName": null,
+            "employeeId": 2
+        },
+        {
+            "id": 3,
+            "type": "powerOfAttorney",
+            "number": "POA-2025-010",
+            "date": "2025-09-12",
+            "description": "Tovarlarni olish uchun ishonchnoma",
+            "invoiceType": null,
+            "attorneyFullName": "Shavkat Xudoyberdiyev",
+            "employeeId": 3
+        },
+        {
+            "id": 4,
+            "type": "invoice",
+            "number": "INV-2025-001",
+            "date": "2025-09-01",
+            "description": "Payment for office supplies",
+            "invoiceType": "standard",
+            "attorneyFullName": null,
+            "employeeId": 4
+        },
+        {
+            "id": 5,
+            "type": "invoice",
+            "number": "INV-2025-002",
+            "date": "2025-09-05",
+            "description": "Additional service charges",
+            "invoiceType": "additional",
+            "attorneyFullName": null,
+            "employeeId": 5
+        },
+        {
+            "id": 6,
+            "type": "attorney",
+            "number": "POA-2025-001",
+            "date": "2025-09-07",
+            "description": "Power of attorney for contract signing",
+            "invoiceType": null,
+            "attorneyFullName": "John Smith",
+            "employeeId": 6
+        },
+        {
+            "id": 7,
+            "type": "invoice",
+            "number": "INV-2025-003",
+            "date": "2025-09-10",
+            "description": "Monthly software subscription",
+            "invoiceType": "standard",
+            "attorneyFullName": null,
+            "employeeId": 7
+        },
+        {
+            "id": 8,
+            "type": "attorney",
+            "number": "POA-2025-002",
+            "date": "2025-09-11",
+            "description": "Power of attorney for financial transactions",
+            "invoiceType": null,
+            "attorneyFullName": "Alice Brown",
+            "employeeId": 8
+        },
+        {
+            "id": 9,
+            "type": "attorney",
+            "number": "POA-2025-002",
+            "date": "2025-09-11",
+            "description": "Power of attorney for financial transactions",
+            "invoiceType": null,
+            "attorneyFullName": "Alice Brown",
+            "employeeId": 9
+        },
+        {
+            "id": 10,
+            "type": "attorney",
+            "number": "POA-2025-002",
+            "date": "2025-09-11",
+            "description": "Power of attorney for financial transactions",
+            "invoiceType": null,
+            "attorneyFullName": "Alice Brown",
+            "employeeId": 10
+        }
     ]
 }

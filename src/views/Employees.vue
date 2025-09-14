@@ -7,7 +7,7 @@
     <v-col cols="4" class="text-right">
     <v-text-field
         v-model="search"
-        label="Filter"
+        label="Search"
         prepend-inner-icon="mdi-magnify"
         clearable
         outlined
@@ -21,7 +21,6 @@
     :headers="headers"
     :items="filteredEmployees"
     :loading="loading"
-    :items-per-page="pageSize"
     hide-default-footer
     class="elevation-1"
   >
@@ -47,7 +46,7 @@
 
   <!-- Footer: total va pagination -->
   <div class="d-flex align-center justify-space-between mt-4">
-    <div>Jami: {{ total }}</div>
+    <div>Jami: {{ total.value }}</div>
     <VPagination
       v-model="currentPage"
       :length="pages"
@@ -132,6 +131,8 @@
         }
     };
 </script>
-<style>
-
+<style lang="scss">
+  thead{
+    background-color: gainsboro;
+  }
 </style>
