@@ -83,12 +83,12 @@
 
         router.push({
             path: "/employees",
-            query: { page: val, limit: pageSize }
+            query: { page: val, limit: pageSize.value }
         });
 
         store.fetchEmployees({
             _page: val,
-            _limit: pageSize
+            _limit: pageSize.value
         });
         };
     // const handleCurrentChange = (val) => {
