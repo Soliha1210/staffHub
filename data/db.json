@@ -127,7 +127,7 @@
             "type": "invoice",
             "number": "INV-2025-001",
             "date": "2025-09-10",
-            "description": "Asosiy xizmatlar uchun hisob-faktura",
+            "description": "Invoice for Main Services",
             "invoiceType": "standard",
             "attorneyFullName": null,
             "employeeId": 1
@@ -137,7 +137,7 @@
             "type": "invoice",
             "number": "INV-2025-002",
             "date": "2025-09-11",
-            "description": "Qo‘shimcha xizmatlar uchun hisob-faktura",
+            "description": "Invoice for Additional Services",
             "invoiceType": "additional",
             "attorneyFullName": null,
             "employeeId": 2
@@ -147,7 +147,7 @@
             "type": "powerOfAttorney",
             "number": "POA-2025-010",
             "date": "2025-09-12",
-            "description": "Tovarlarni olish uchun ishonchnoma",
+            "description": "“Power of Attorney for Receiving Goods",
             "invoiceType": null,
             "attorneyFullName": "Shavkat Xudoyberdiyev",
             "employeeId": 3

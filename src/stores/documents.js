@@ -10,23 +10,33 @@ export const useDocumentStore = defineStore("documents", () => {
     const error = ref(null);
     const employeeId = ref(null); // filter uchun
 
-    const fetchDocuments = async ({ page = 1, limit = 10 } = {}) => {
+    const fetchDocuments = async (params) => {
         try {
         loading.value = true;
+        params
+        if (employeeId.value) {
+            params.employeeId = employeeId.value;
+        }
+
         const result = await axios.get("http://localhost:3000/documents", {
-            params: {
-            _page: page,
-            _limit: limit,
-            ...(employeeId.value ? { employeeId: employeeId.value } : {}),
-            },
+            params,
         });
 
         if (result.status === 200) {
             documents.value = result.data;
-            total.value = parseInt(result.headers["x-total-count"], 10) || 0;
+            const headerTotal = result.headers["x-total-count"];
+
+            if (headerTotal) {
+            total.value = parseInt(headerTotal, 10);
+            } else {
+            const all = await axios.get("http://localhost:3000/documents", {
+                params: employeeId.value ? { employeeId: employeeId.value } : {},
+            });
+            total.value = all.data.length;
+            }
         }
         } catch (err) {
-        console.error("Error:", err);
+        console.error("Error fetching documents:", err);
         error.value = err.message;
         } finally {
         loading.value = false;
@@ -37,12 +47,12 @@ export const useDocumentStore = defineStore("documents", () => {
         loading.value = true;
         error.value = null;
         try {
-        const { data } = await axios.get(`http://localhost:3000/documents/${id}`);
-        selectedDocument.value = data;
+            const { data } = await axios.get(`http://localhost:3000/documents/${id}`);
+            selectedDocument.value = data;
         } catch (err) {
-        error.value = err.message;
+            error.value = err.message;
         } finally {
-        loading.value = false;
+            loading.value = false;
         }
     };
 

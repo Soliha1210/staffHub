@@ -42,6 +42,14 @@ const router = createRouter({
         }
       },
       {
+        path: '/documents/:id',
+        name: 'DocumentDetail',
+        component: () => import ('@/components/DocumentDetail.vue'),
+        meta: {
+          title: 'Documents',
+        }
+      },
+      {
         path: '/settings',
         name: 'settings',
         component: () => import ('@/views/Settings.vue'),

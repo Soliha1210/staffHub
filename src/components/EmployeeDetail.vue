@@ -57,7 +57,7 @@
     const { selectedEmployee: employee, loading, error } = storeToRefs(store)
 
     onMounted(() => {
-    store.fetchEmployeeById(route.params.id)
+        store.fetchEmployeeById(route.params.id)
     })
 </script>
 

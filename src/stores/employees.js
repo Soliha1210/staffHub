@@ -10,21 +10,22 @@ export const useEmployeeStore = defineStore("employees", () => {
     const error = ref(null)
 
     const fetchEmployees = async (params) => {
-        console.log('param',params);
-        
         try {
         loading.value = true;
         const result = await axios.get("http://localhost:3000/employees", {
-            params,
-            headers: {
-            Prefer: "count=exact", 
-            },
+            params
         });
 
         if (result.status === 200) {
             employees.value = result.data;
-            total.value = parseInt(result.headers["x-total-count"], 10) || 0;
-            console.log('total',result.headers);
+            const headerTotal = result.headers["x-total-count"];
+            if (headerTotal) {
+                total.value = parseInt(headerTotal, 10);
+                } else {
+                const all = await axios.get("http://localhost:3000/documents");
+                total.value = all.data.length;
+                }
+            console.log('total',total.value);
             
         } }
         catch (err) {

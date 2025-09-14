@@ -46,7 +46,7 @@
 
   <!-- Footer: total va pagination -->
   <div class="d-flex align-center justify-space-between mt-4">
-    <div>Jami: {{ total.value }}</div>
+    <div>Total: {{ total }}</div>
     <VPagination
       v-model="currentPage"
       :length="pages"
@@ -77,24 +77,24 @@
         if (!total.value || !pageSize.value) return 1
         return Math.max(1, Math.ceil(total.value / pageSize.value))
     })
-    // const handleCurrentChange = (val) => {
-    //     window.scrollTo(0, 0);
-    //     currentPage.value = val;
-
-    //     router.push({
-    //         path: "/employees",
-    //         query: { page: val, limit: pageSize }
-    //     });
-
-    //     store.fetchEmployees({
-    //         _page: val,
-    //         _limit: pageSize
-    //     });
-    //     };
     const handleCurrentChange = (val) => {
+        window.scrollTo(0, 0);
         currentPage.value = val;
-        store.fetchEmployees({ page: val, limit: pageSize.value });
-    };
+
+        router.push({
+            path: "/employees",
+            query: { page: val, limit: pageSize }
+        });
+
+        store.fetchEmployees({
+            _page: val,
+            _limit: pageSize
+        });
+        };
+    // const handleCurrentChange = (val) => {
+    //     currentPage.value = val;
+    //     store.fetchEmployees({ page: val, limit: pageSize.value });
+    // };
         onMounted(() => {
             store.fetchEmployees({ page: currentPage.value, limit: pageSize.value });
         });
