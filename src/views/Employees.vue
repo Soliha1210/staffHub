@@ -122,7 +122,7 @@
         // active toggle
         const toggleActive = async (employee) => {
         try {
-            await axios.patch(`http://localhost:10000/employees/${employee.id}`, {
+            await axios.patch(`https://staffhub-j4zy.onrender.com/employees/${employee.id}`, {
             active: employee.active
             });
             console.log("Saved:", employee.name, employee.active);

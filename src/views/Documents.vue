@@ -71,7 +71,7 @@
     const selectedEmployee = ref(null);
 
     const fetchEmployees = async () => {
-        const res = await axios.get("http://localhost:10000/employees");
+        const res = await axios.get("https://staffhub-j4zy.onrender.com/employees");
         employees.value = res.data.map((e) => ({
             id: e.id,
             fullName: `${e.name} ${e.surname}`,
