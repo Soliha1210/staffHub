@@ -18,7 +18,7 @@ export const useDocumentStore = defineStore("documents", () => {
             params.employeeId = employeeId.value;
         }
 
-        const result = await axios.get("http://localhost:3000/documents", {
+        const result = await axios.get("http://localhost:10000/documents", {
             params,
         });
 
@@ -29,7 +29,7 @@ export const useDocumentStore = defineStore("documents", () => {
             if (headerTotal) {
             total.value = parseInt(headerTotal, 10);
             } else {
-            const all = await axios.get("http://localhost:3000/documents", {
+            const all = await axios.get("http://localhost:10000/documents", {
                 params: employeeId.value ? { employeeId: employeeId.value } : {},
             });
             total.value = all.data.length;
@@ -47,7 +47,7 @@ export const useDocumentStore = defineStore("documents", () => {
         loading.value = true;
         error.value = null;
         try {
-            const { data } = await axios.get(`http://localhost:3000/documents/${id}`);
+            const { data } = await axios.get(`http://localhost:10000/documents/${id}`);
             selectedDocument.value = data;
         } catch (err) {
             error.value = err.message;

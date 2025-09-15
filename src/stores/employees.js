@@ -12,7 +12,7 @@ export const useEmployeeStore = defineStore("employees", () => {
     const fetchEmployees = async (params) => {
         try {
         loading.value = true;
-        const result = await axios.get("http://localhost:3000/employees", {
+        const result = await axios.get("http://localhost:10000/employees", {
             params
         });
 
@@ -22,7 +22,7 @@ export const useEmployeeStore = defineStore("employees", () => {
             if (headerTotal) {
                 total.value = parseInt(headerTotal, 10);
                 } else {
-                const all = await axios.get("http://localhost:3000/documents");
+                const all = await axios.get("http://localhost:10000/documents");
                 total.value = all.data.length;
                 }
             console.log('total',total.value);
@@ -38,7 +38,7 @@ export const useEmployeeStore = defineStore("employees", () => {
         loading.value = true
         error.value = null
         try {
-        const { data } = await axios.get(`http://localhost:3000/employees/${id}`)
+        const { data } = await axios.get(`http://localhost:10000/employees/${id}`)
         selectedEmployee.value = data
         } catch (err) {
         error.value = err.message
